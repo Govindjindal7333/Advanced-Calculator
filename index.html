@@ -1,0 +1,104 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Advanced Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator" id="calculator">
+    <div class="topbar">
+      <div class="brand">
+        <div class="logo">AC</div>
+        <div>
+          <h1>Advanced Calculator</h1>
+          <div class="kbd-hint">Scientific • Memory • History • Keyboard-ready</div>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="themeBtn" class="btn fn" title="Toggle light/dark">Theme</button>
+        <button id="clearAll" class="btn fn">C</button>
+      </div>
+    </div>
+
+    <div class="screen">
+      <div class="expression" id="expression">0</div>
+      <div class="result" id="result">0</div>
+    </div>
+
+    <div class="main">
+      <div class="pad" role="application" aria-label="calculator">
+        <!-- Row 1 -->
+        <div class="btn fn" data-action="mc">MC</div>
+        <div class="btn fn" data-action="mr">MR</div>
+        <div class="btn fn" data-action="mplus">M+</div>
+        <div class="btn fn" data-action="mminus">M-</div>
+
+        <!-- Row 2 -->
+        <div class="btn fn" data-value="sin(">sin</div>
+        <div class="btn fn" data-value="cos(">cos</div>
+        <div class="btn fn" data-value="tan(">tan</div>
+        <div class="btn op" data-value="/">÷</div>
+
+        <!-- Row 3 -->
+        <div class="btn fn" data-value="ln(">ln</div>
+        <div class="btn fn" data-value="log10(">log</div>
+        <div class="btn fn" data-value="sqrt(">√</div>
+        <div class="btn op" data-value="*">×</div>
+
+        <!-- Row 4 -->
+        <div class="btn" data-value="7">7</div>
+        <div class="btn" data-value="8">8</div>
+        <div class="btn" data-value="9">9</div>
+        <div class="btn op" data-value="-">−</div>
+
+        <!-- Row 5 -->
+        <div class="btn" data-value="4">4</div>
+        <div class="btn" data-value="5">5</div>
+        <div class="btn" data-value="6">6</div>
+        <div class="btn op" data-value="+">+</div>
+
+        <!-- Row 6 -->
+        <div class="btn" data-value="1">1</div>
+        <div class="btn" data-value="2">2</div>
+        <div class="btn" data-value="3">3</div>
+        <div class="btn op wide" data-action="equals">=</div>
+
+        <!-- Row 7 -->
+        <div class="btn fn" data-action="paren">( )</div>
+        <div class="btn" data-value="0">0</div>
+        <div class="btn" data-value=".">.</div>
+        <div class="btn fn" data-action="pow">xʸ</div>
+
+        <!-- Row 8 -->
+        <div class="btn fn" data-action="pi">π</div>
+        <div class="btn fn" data-action="e">e</div>
+        <div class="btn fn" data-action="factorial">n!</div>
+        <div class="btn fn" data-action="percent">%</div>
+      </div>
+
+      <div class="side">
+        <div class="memory" id="memoryBox">
+          <strong>Memory</strong>
+          <div id="memoryVal">0</div>
+        </div>
+
+        <div class="history" id="historyBox">
+          <strong>History</strong>
+          <div id="historyList"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="kbd-hint">Keys: 0-9 . + - * / Enter = Backspace</div>
+      <div>Built with ❤️</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
